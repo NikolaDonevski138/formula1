@@ -1,0 +1,16 @@
+.champion-info {
+    display:flex;
+    justify-content: space-around;
+    background:linear-gradient(to right,rgb(255,75,43),rgb(255,65,108));   
+    padding:0.3rem;
+    
+}
+
+.driver-info {
+    text-align: right;
+}
+
+.winner {
+    font-size:1.3rem;
+    color:white;
+}
