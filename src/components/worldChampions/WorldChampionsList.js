@@ -3,7 +3,7 @@ import './styles/styles.css'
 import './styles/worldChampionsList-style.css'
 import {connect} from 'react-redux'
 import Spinner from '../spinner/index'
-
+import {champion} from '../../actions/index'
 
 class WorldChampionsList extends React.Component {
 
@@ -24,7 +24,7 @@ class WorldChampionsList extends React.Component {
                 // console.log(DriverName , 'DriverName')
                 console.log(familyName)
                 return(
-                    <div className="champion-info grow">
+                    <div onClick={() => this.props.champion(season,familyName,givenName)} className="champion-info grow">
                         <div>
                             <h1>{season}</h1>
                             <i></i>
@@ -68,4 +68,4 @@ const mapStateToProps = (state)=>{
     }
 }
 
-export default connect(mapStateToProps)(WorldChampionsList)
+export default connect(mapStateToProps,{champion})(WorldChampionsList)

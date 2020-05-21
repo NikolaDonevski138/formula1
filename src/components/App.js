@@ -1,7 +1,7 @@
 import React from 'react'
 import WorldChampions from './worldChampions/WorldChampions'
 import RaceWinners from './raceWinners/RaceWinners'
-// import {Router,Route,Switch} from 'react-router-dom'
+import {Router,Route,Switch} from 'react-router-dom'
 class App extends React.Component {
 
    
@@ -9,7 +9,7 @@ class App extends React.Component {
         return (
             <div>
                 <WorldChampions />
-                {/* <RaceWinners /> */}
+                 <RaceWinners />
             </div>
         )
     }
