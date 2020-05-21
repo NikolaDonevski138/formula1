@@ -25,3 +25,18 @@
 .c {
     background-color:grey;
 }
+
+.img {
+    height:50px;
+    width:50px;
+    vertical-align: bottom;
+}
+
+.car-info{
+    display:flex;
+    justify-items: flex-end;
+    justify-content:flex-end
+}
+.ml {
+    margin-left:0.5rem;
+}

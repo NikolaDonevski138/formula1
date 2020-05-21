@@ -4,7 +4,7 @@ import './styles/worldChampionsList-style.css'
 import {connect} from 'react-redux'
 import Spinner from '../spinner/index'
 import {champion} from '../../actions/index'
-
+import { Link } from 'react-router-dom';
 class WorldChampionsList extends React.Component {
 
     
@@ -20,11 +20,14 @@ class WorldChampionsList extends React.Component {
                 const {familyName,givenName} = item.DriverStandings[0].Driver
                 const {points,wins} = item.DriverStandings[0]
                 const car = item.DriverStandings[0].Constructors[0].name
+                const driverId=item.DriverStandings[0].Driver.driverId;
                 
                 // console.log(DriverName , 'DriverName')
                 console.log(familyName)
                 return(
-                    <div onClick={() => this.props.champion(season,familyName,givenName)} className="champion-info grow">
+                    <Link to={`/race/${season}`}>
+          
+                        <div onClick={() => this.props.champion(driverId,season,familyName,givenName)} className="champion-info grow">
                         <div>
                             <h1>{season}</h1>
                             <i></i>
@@ -32,12 +35,15 @@ class WorldChampionsList extends React.Component {
                         <div className="driver-info">
                             <h1 className="winner">Winner: {givenName} {familyName}</h1>
                             <p className="points">Points:{points} Wins:{wins}</p>
-                            <img src="formula.png"/>
-                            <p className="driving-car">Driving Car:{car}</p>
+                            <div class="car-info">
+                                <img className="img" src="./formula.png"/>
+                                <p className="driving-car ml">{car}</p>
+                            </div>
                         </div>
 
                         
-                    </div>
+                         </div>
+                    </Link>
                         )
                         })
                     return championsInfo;
