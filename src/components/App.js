@@ -4,13 +4,11 @@ import RaceWinners from './raceWinners/RaceWinners'
 // import {Router,Route,Switch} from 'react-router-dom'
 class App extends React.Component {
 
-    handleClick(e){
-        console.log(e.target)
-    }
+   
     render(){
         return (
             <div>
-                <WorldChampions click={this.handleClick}/>
+                <WorldChampions />
                 {/* <RaceWinners /> */}
             </div>
         )
