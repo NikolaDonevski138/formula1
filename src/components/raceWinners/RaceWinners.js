@@ -2,7 +2,7 @@ import React from 'react'
 import {fetch_race_data} from '../../actions/index'
 import {connect} from 'react-redux'
 import RaceWinnersList from './RaceWinnersList'
-
+import '../style.css'
 class RaceWinners extends React.Component {
 
     componentDidMount(){
@@ -13,7 +13,7 @@ class RaceWinners extends React.Component {
      
         return(
             <div>
-                <RaceWinnersList />
+                <RaceWinnersList class="table"/>
             </div>
             )
     }

@@ -4,6 +4,10 @@
     align-items: center;
 }
 
-.bg-color {
-    background-color: gold;
+.bg-color1 {
+    background-color: red;
+}
+
+.bg-color2{
+    background-color: blue;
 }

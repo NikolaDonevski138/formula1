@@ -14,3 +14,14 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+
+
+.link{
+    text-decoration:none;
+    color:black;
+}
+
+.table{
+    width:80vw;
+    margin:auto;
+}

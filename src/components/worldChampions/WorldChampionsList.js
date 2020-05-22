@@ -25,7 +25,7 @@ class WorldChampionsList extends React.Component {
                 // console.log(DriverName , 'DriverName')
                 console.log(familyName)
                 return(
-                    <Link to={`/race/${season}`}>
+                    <Link to={`/race/${season}`} className='link'>
           
                         <div onClick={() => this.props.champion(driverId,season,familyName,givenName)} className="champion-info grow">
                         <div>
