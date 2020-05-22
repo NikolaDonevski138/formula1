@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "@emotion/core";
-import BounceLoader from "react-spinners/BounceLoader";
+import GridLoader from "react-spinners/GridLoader";
  
 // Can be a string as well. Need to ensure each key-value pair ends with ;
 const override = css`
@@ -20,9 +20,9 @@ class Spinner extends React.Component {
   render() {
     return (
       <div className="sweet-loading">
-        <BounceLoader
+        <GridLoader
           css={override}
-          size={300}
+          size={30}
           color={"#EE371A"}
           loading={this.state.loading}
         />

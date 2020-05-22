@@ -17,25 +17,45 @@ class RaceWinnersList extends React.Component {
             const raceDriverId = data.Results[0].Driver.driverId
             const worldChampionId = this.props.v.driverId
 
+             let icon = () => {
+                    if(raceDriverId === worldChampionId){
+                        return (
+                            <div>
+                                 <FontAwesomeIcon icon={faCrown} style={{color:'yellow'}}/>
+                            </div>
+                        )
+                    }
+             }
             
-            if(raceDriverId === worldChampionId) {
+            if(index%2 === 0) {
+               
+                
                 return (
                     
-                    <div key={data.round} class="row bg-color">
-                       <div>
+                    <div key={data.round} class="row bg-color1">
+                       <div className="raceInfo-width">
                             <p>Race: {raceName}</p>
                         </div>
-                       <div class="row">
-                             <FontAwesomeIcon icon={faCrown} style={{color:'yellow'}}/>
+                       <div class="winnerRace">
+                             <div className="ma">
+                                {icon()}
+                             </div>
                             <p>Winner: {`${winnerName} ${winnerSurname}`}</p>
                         </div>
                     </div>
                 )
             } else {
                 return (
-                    <div key={data.round} class="row">
-                       <p>Race: {raceName}</p>
-                       <p>Winner: {`${winnerName} ${winnerSurname}`}</p>
+                    <div key={data.round} class="row bg-color2">
+                       <div className="raceInfo-width">
+                            <p className="text">Race: {raceName}</p>
+                       </div>
+                       <div className="winnerRace">
+                        <div className="ma">
+                            {icon()}
+                        </div>
+                       <p className="text">Winner: {`${winnerName} ${winnerSurname}`}</p>
+                       </div>
                     </div>
                 )
             }

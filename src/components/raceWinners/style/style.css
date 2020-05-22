@@ -9,5 +9,23 @@
 }
 
 .bg-color2{
-    background-color: blue;
+    background-color: black;
+}
+
+.text {
+    color:white;
+}
+
+.ma {
+    margin-right:1rem;
+}
+.raceInfo-width{
+    width:35%;
+}
+
+.winnerRace {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:35%;
 }
