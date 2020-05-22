@@ -40,7 +40,7 @@ class RaceWinnersList extends React.Component {
                              <div className="ma">
                                 {icon()}
                              </div>
-                            <p>Winner: {`${winnerName} ${winnerSurname}`}</p>
+                            <p className="width">Winner: {`${winnerName} ${winnerSurname}`}</p>
                         </div>
                     </div>
                 )
@@ -54,7 +54,8 @@ class RaceWinnersList extends React.Component {
                         <div className="ma">
                             {icon()}
                         </div>
-                       <p className="text">Winner: {`${winnerName} ${winnerSurname}`}</p>
+                        <p className="width text">Winner: {`${winnerName} ${winnerSurname}`}</p>
+
                        </div>
                     </div>
                 )
