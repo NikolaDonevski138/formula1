@@ -1,20 +1,18 @@
 .cards {
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-
-    grid-gap:1.5rem;
-    width:90vw;
-    margin:auto
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+  width: 90vw;
+  margin: auto;
 }
 
 .grow {
-    transition: all .2s ease-in-out;
-    cursor:pointer;
-    border-radius:10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .grow:hover {
-    transform:scale(1.1);
-    background:linear-gradient(to right,rgba(255,95,109),rgb(255,195,113));   
+  transform: scale(1.1);
+  background: linear-gradient(to right, rgba(255, 95, 109), rgb(255, 195, 113));
 }

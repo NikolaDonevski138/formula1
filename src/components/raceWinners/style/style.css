@@ -1,42 +1,42 @@
 .row {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .bg-color1 {
-    background-color: red;
+  background-color: red;
 }
 
-.bg-color2{
-    background-color: black;
+.bg-color2 {
+  background-color: black;
 }
 
 .text {
-    color:white;
+  color: white;
 }
 
 .ma {
-    margin-right:1rem;
+  margin-right: 1rem;
 }
-.raceInfo-width{
-    width:35%;
+.raceInfo-width {
+  width: 35%;
 }
 
 .winnerRace {
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    width:35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 35%;
 }
 
-.winnerOfRace{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    width:80%;
+.winnerOfRace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
-.width{
-    width:70%;
+.width {
+  width: 70%;
 }

@@ -1,22 +1,22 @@
 import React from "react";
 import { css } from "@emotion/core";
 import GridLoader from "react-spinners/GridLoader";
- 
+
 // Can be a string as well. Need to ensure each key-value pair ends with ;
 const override = css`
   display: block;
   margin: 0 auto;
   border-color: red;
 `;
- 
+
 class Spinner extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: true
+      loading: true,
     };
   }
- 
+
   render() {
     return (
       <div className="sweet-loading">
@@ -31,4 +31,4 @@ class Spinner extends React.Component {
   }
 }
 
-export default Spinner
+export default Spinner;

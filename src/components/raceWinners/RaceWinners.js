@@ -1,24 +1,16 @@
-import React from 'react'
-import {fetch_race_data} from '../../actions/index'
-import {connect} from 'react-redux'
-import RaceWinnersList from './RaceWinnersList'
-import '../style.css'
+import React from "react";
+import { fetch_race_data } from "../../actions/index";
+import { connect } from "react-redux";
+import RaceWinnersList from "./RaceWinnersList";
+import "../style.css";
 class RaceWinners extends React.Component {
+  componentDidMount() {
+    this.props.fetch_race_data();
+  }
 
-    componentDidMount(){
-        this.props.fetch_race_data()
-    }
-
-    render(){
-     
-        return(
-            <div>
-                <RaceWinnersList class="table"/>
-            </div>
-            )
-    }
+  render() {
+    return <RaceWinnersList class="table" />;
+  }
 }
 
-
-
-export default connect(null,{fetch_race_data})(RaceWinners)
+export default connect(null, { fetch_race_data })(RaceWinners);
