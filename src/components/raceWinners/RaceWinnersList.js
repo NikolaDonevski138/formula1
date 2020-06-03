@@ -9,7 +9,7 @@ import RaceWinnerItem from "./RaceWinnerItem";
 class RaceWinnersList extends React.Component {
   renderHelper = () => {
     if (this.props.raceInfo !== undefined) {
-      const raceInfo = this.props.raceInfo.map((data, index) => {
+      const raceInfo = this.props.raceInfo.map(data => {
         const raceName = data.raceName;
         const winnerName = data.Results[0].Driver.givenName;
         const winnerSurname = data.Results[0].Driver.familyName;
@@ -26,31 +26,17 @@ class RaceWinnersList extends React.Component {
           }
         };
 
-        if (index % 2 === 0) {
-          return (
-            <RaceWinnerItem
-              key={data.round}
-              raceName={raceName}
-              winnerName={winnerName}
-              winnerSurname={winnerSurname}
-              icon={icon()}
-              backgroundColor={"bgColorOddRow"}
-              color={"text-color"}
-            />
-          );
-        } else {
-          return (
-            <RaceWinnerItem
-              key={data.round}
-              raceName={raceName}
-              winnerName={winnerName}
-              winnerSurname={winnerSurname}
-              icon={icon()}
-              backgroundColor={"bgColorEvenRow"}
-              color={"text-color"}
-            />
-          );
-        }
+        return (
+          <RaceWinnerItem
+            key={data.round}
+            raceName={raceName}
+            winnerName={winnerName}
+            winnerSurname={winnerSurname}
+            icon={icon()}
+            backgroundColor={"bgColor"}
+            color={"text-color"}
+          />
+        );
       });
       return raceInfo;
     } else {

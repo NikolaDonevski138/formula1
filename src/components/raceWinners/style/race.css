@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 1000px;
+  max-width: 62.5rem;
   margin: auto;
 }
 
-.bgColorOddRow {
+.bgColor:nth-child(odd) {
   background-color: red;
 }
 
-.bgColorEvenRow {
+.bgColor:nth-child(even) {
   background-color: black;
 }
 

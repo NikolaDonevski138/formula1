@@ -4,7 +4,7 @@ import { fetch_formula_data } from "../../actions/index";
 import WorldChampionsList from "./WorldChampionsList";
 
 class WorldChampions extends React.Component {
-  componentDidMount() {
+  componentDidMount() { 
     this.props.fetch_formula_data();
   }
 

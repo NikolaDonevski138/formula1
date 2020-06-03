@@ -5,6 +5,7 @@ import Spinner from "../spinner/index";
 import { champion } from "../../actions/index";
 import { Link } from "react-router-dom";
 import WorldChampionItem from "./WorldChampionItem";
+import uuid from 'react-uuid'
 
 class WorldChampionsList extends React.Component {
   renderHelper = () => {
@@ -17,23 +18,25 @@ class WorldChampionsList extends React.Component {
         const driverId = item.DriverStandings[0].Driver.driverId;
 
         return (
-          <Link to={`/race/${season}`} className="link">
-            <div
-              onClick={() =>
-                this.props.champion(driverId, season, familyName, givenName)
-              }
-              className="champion-info grow"
-            >
-              <WorldChampionItem
-                season={season}
-                givenName={givenName}
-                familyName={familyName}
-                points={points}
-                wins={wins}
-                car={car}
-              />
-            </div>
-          </Link>
+          <div key={uuid()}>
+            <Link to={`/race/${season}`} className="link" >
+              <div
+                onClick={() =>
+                  this.props.champion(driverId, season, familyName, givenName)
+                }
+                className="champion-info grow"
+              >
+                <WorldChampionItem
+                  season={season}
+                  givenName={givenName}
+                  familyName={familyName}
+                  points={points}
+                  wins={wins}
+                  car={car}
+                />
+              </div>
+            </Link>
+          </div>
         );
       });
       return championsInfo;

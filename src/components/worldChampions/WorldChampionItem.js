@@ -3,7 +3,7 @@ import "./style/worldChampionItem.css";
 
 const WorldChampionItem = props => {
   return (
-    <div class="flex">
+    <div className="flex">
       <div>
         <h2>{props.season}</h2>
       </div>
@@ -14,7 +14,7 @@ const WorldChampionItem = props => {
           Points:{props.points} Wins:{props.wins}
         </p>
         <div className="car-container">
-          <img className="img" src="./formula.png" />
+          <img className="img" src="./formula.png" alt="Formula 1" />
           <p className="margin-left">{props.car}</p>
         </div>
       </div>
