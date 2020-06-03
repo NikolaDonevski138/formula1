@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "./style/style.css";
-import "../style.css";
+import "../shared.css";
 import Spinner from "../spinner/index";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,8 +34,8 @@ class RaceWinnersList extends React.Component {
               winnerName={winnerName}
               winnerSurname={winnerSurname}
               icon={icon()}
-              backgroundColor={"bg-color1"}
-              color={"text"}
+              backgroundColor={"bgColorOddRow"}
+              color={"text-color"}
             />
           );
         } else {
@@ -47,8 +46,8 @@ class RaceWinnersList extends React.Component {
               winnerName={winnerName}
               winnerSurname={winnerSurname}
               icon={icon()}
-              backgroundColor={"bg-color2"}
-              color={"text"}
+              backgroundColor={"bgColorEvenRow"}
+              color={"text-color"}
             />
           );
         }

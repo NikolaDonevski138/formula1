@@ -4,11 +4,11 @@
   background: linear-gradient(to right, rgb(255, 75, 43), rgb(255, 65, 108));
 }
 
-.driver-info {
+.driver-container {
   text-align: right;
 }
 
-.winner {
+.driver-info {
   font-size: 1.3rem;
   color: white;
 }
@@ -25,13 +25,13 @@
   vertical-align: bottom;
 }
 
-.car-info {
+.car-container {
   display: flex;
   justify-items: flex-end;
   justify-content: flex-end;
 }
 
-.ml {
+.margin-left {
   margin-left: 0.5rem;
 }
 

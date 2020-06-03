@@ -1,6 +1,5 @@
 import React from "react";
-import "./styles/styles.css";
-import "./styles/worldChampionsList-style.css";
+import "./style/worldChampionsList.css";
 import { connect } from "react-redux";
 import Spinner from "../spinner/index";
 import { champion } from "../../actions/index";

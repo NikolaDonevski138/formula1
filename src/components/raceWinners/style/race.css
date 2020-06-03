@@ -2,41 +2,36 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.bg-color1 {
+.bgColorOddRow {
   background-color: red;
 }
 
-.bg-color2 {
+.bgColorEvenRow {
   background-color: black;
 }
 
-.text {
+.text-color {
   color: white;
 }
 
-.ma {
+.margin-right {
   margin-right: 1rem;
 }
 .raceInfo-width {
   width: 35%;
 }
 
-.winnerRace {
+.winnerOfRace {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 35%;
+  width: 45%;
 }
 
-.winnerOfRace {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-
-.width {
+.winner-container {
   width: 70%;
 }
